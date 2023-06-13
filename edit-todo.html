@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="todo.html">ToDo</a></li>
+        <li><a href="user-page.html">Users</a></li>
+        <li><a href="new-todo.html">Add ToDo</a></li>
+        <li>Change ToDo</li>
+      </ul>
+    </nav>
+    <p>
+      <label for="toDoId">ID</label>
+      <input type="number" name="toDoId" id="toDoId" />
+      <button id="editBtn">Edit</button>
+    </p>
+    <hr />
+    <p>
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" />
+    </p>
+    <p>
+      <label for="userId">User ID</label>
+      <input type="number" name="userId" id="userId" />
+    </p>
+    <p>
+      <label for="completed">Completed</label>
+      <input type="checkbox" name="completed" id="completed" />
+    </p>
+
+    <button id="updateBtn">Update</button>
+    <button id="cancelBtn">Cancel</button>
+    <p id="messageArea"></p>
+    <script src="./scripts/edit-todo.js"></script>
+  </body>
+</html>

@@ -16,11 +16,9 @@ document.getElementById("addBtn").addEventListener("click", () => {
   })
     .then((response) => response.json())
     .then((todo) => {
-      alert("Success!");
-      console.log(todo);
+      alert(`Created new todo item with the ID of ${todo.id}`);
     })
     .catch((ERR) => {
-      alert("Unable to add student.");
-      console.log(ERR);
+      alert(`${ERR}Unable to add student.`);
     });
 });
